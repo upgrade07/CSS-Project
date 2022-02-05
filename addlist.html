@@ -33,13 +33,22 @@
 .container{
     height: 200px;
     width: 400px;
-    border: solid 3px orangered;
+    border: solid 2px orangered;
     margin-left: 30%;
     margin-top: 15%;
     display: flex;
     justify-content: center;
     position: absolute;
     background-color: white;
+    border-radius: 10px;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12)
+    ;
 }
 .btn{
     display: flex;
@@ -47,9 +56,9 @@
     justify-content: center;
     align-items: center;
     width: 80px;
-    height: 25px;
-    margin-left: 40px;
-    margin-top: 10px;
+    height: 40px;
+    margin-left: 80px;
+    margin-top: 15px;
     border-radius: 10px;
     background-color: orangered;
     color: white;
@@ -60,6 +69,22 @@
     margin-left: 13%;
     margin-top: 6%;
     
+}
+
+.input{
+    border-radius: 4px;
+    height: 30px;
+    width: 250px;
+    border-style: solid 2px;
+    border-color: orangered;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12)
+    ;
 }
     
     
@@ -104,9 +129,9 @@
 
      <div class="container">
      <div class="box"><br>
-     <h2>Add New List</h2>
+     <h2 style="color: orangered; text-align: center; font-family: monospace;">Add New List</h2>
      <label for="text"></label><br>
-     <input type="text"><br><br>
+     <input class="input" type="text"><br><br>
      <button class="btn">ADD</button>
     </div>
       
